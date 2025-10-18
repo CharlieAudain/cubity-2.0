@@ -2,8 +2,18 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi, we're creating a cubity</h1>
+    <div className="Nav">
+      <nav>
+        <a href="#">Cubity</a>
+      </nav>
+      <ul>
+        <li>
+          <a href="#">Timer</a>
+        </li>
+        <li>
+          <a href="#">Solves</a>
+        </li>
+      </ul>
     </div>
   );
 }
