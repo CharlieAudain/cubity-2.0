@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 class Tips extends Component {
   render() {
+    const {tip} = this.props
     return (
       <div>
-        <h4>Use Spacebar to control the timer!</h4>
+        <h4>{tip}</h4>
       </div>
     );
   }
