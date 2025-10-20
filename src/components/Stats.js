@@ -14,6 +14,18 @@ class Stats extends Component {
     ao500: PropTypes.string.isRequired,
     ao1000: PropTypes.string.isRequired,
   };
+  static defaultProps = {
+    best: "Do more solves!",
+    tbest: "Do more solves!",
+    worst: "Do more solves!",
+    tworst: "Do more solves!",
+    ao12: "Do more solves!",
+    ao50: "Do more solves!",
+    ao100: "Do more solves!",
+    ao200: "Do more solves!",
+    ao500: "Do more solves!",
+    ao1000: "Do more solves!",
+  };
 
   render() {
     const {
