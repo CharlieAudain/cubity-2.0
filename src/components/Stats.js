@@ -41,8 +41,8 @@ class Stats extends Component {
       ao1000,
     } = this.props;
     return (
-      <div>
-        <ul>
+      <div className="container">
+        <ul className = "stats">
           <li>Best: {best}</li>
           <li>Today's Best: {tbest}</li>
           <li>Worst: {worst}</li>

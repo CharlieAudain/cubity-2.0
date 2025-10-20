@@ -1,22 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./App.css";
 import App from "./App";
 import Nav from "./components/Nav";
-import Timer from "./components/Timer";
+import TimerScreen from "./components/TimerScreen";
 import Tips from "./components/Tips";
-import Stats from "./components/Stats";
-import CurrentAvg from "./components/CurrentAvg";
+
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Nav />
-    <Stats />
-    <Timer />
+    <TimerScreen />
     <Tips />
-    <CurrentAvg />
   </React.StrictMode>
 );
 

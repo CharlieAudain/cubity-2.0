@@ -13,7 +13,7 @@ class Scramble extends Component {
 
     return (
       <div>
-        <h4>{scramble}</h4>
+        <h4 className="scramble">{scramble}</h4>
       </div>
     );
   }

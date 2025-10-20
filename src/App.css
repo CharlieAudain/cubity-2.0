@@ -21,12 +21,12 @@ nav {
 }
 
 nav ul,
-#stats ul {
+.stats ul {
   display: flex;
 }
 
-main,
-#lower {
+.timerScreen,
+.lower {
   display: flex;
 }
 
@@ -43,19 +43,19 @@ nav a {
   padding: 5em;
 }
 
-#scramble {
+.scramble {
   margin-bottom: 2.5em;
 }
 
-#timer {
+.timer {
   font-size: 10em;
 }
 
-#stats ul {
+.stats ul {
   flex-direction: column;
 }
 
-#stats ul li {
+.stats ul li {
   margin-bottom: 0.5em;
 }
 
@@ -85,7 +85,7 @@ a:hover {
   color: #00bfff;
 }
 
-#tips {
+.tips {
   margin: auto;
   padding: 1em;
   text-align: center;

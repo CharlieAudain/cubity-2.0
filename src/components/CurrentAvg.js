@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import "../App.css";
 class CurrentAvg extends Component {
   static propTypes = {
     av1: PropTypes.string.isRequired,
@@ -22,7 +22,7 @@ class CurrentAvg extends Component {
   render() {
     const { av1, av2, av3, av4, av5, ao5 } = this.props;
     return (
-      <div>
+      <div className="container">
         <p>Current Ao5: {ao5}</p>
         <ul>
           <li>{av1}</li>

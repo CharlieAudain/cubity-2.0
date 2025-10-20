@@ -5,9 +5,9 @@ import Controls from "./Controls";
 class Timer extends Component {
   render() {
     return (
-      <div>
+      <div className = "container">
         <Scramble />
-        <h1>0.00</h1>
+        <h1 className="timer">0.00</h1>
         <Controls />
       </div>
     );

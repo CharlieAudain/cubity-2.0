@@ -7,13 +7,13 @@ class Tips extends Component {
   };
 
   static defaultProps = {
-    tip: "Use Spacebar to control the timer!"
-  }
+    tip: "Use Spacebar to control the timer!",
+  };
   render() {
     const { tip } = this.props;
     return (
-      <div>
-        <h4>{tip}</h4>
+      <div className="tips">
+        <h3>{tip}</h3>
       </div>
     );
   }

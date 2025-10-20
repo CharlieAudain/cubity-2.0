@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-
+import "../App.css";
 class Nav extends Component {
   render() {
     return (
       <div>
         <nav>
-          <ul>
-            <li>
               <a href="#">Cubity</a>
-            </li>
+          <ul>
+           
+           
             <li>
               <a href="#">Timer</a>
             </li>
@@ -22,7 +22,7 @@ class Nav extends Component {
               <a href="#">My Account</a>
             </li>
             <li>
-                <a href="#">Log Out</a>
+              <a href="#">Log Out</a>
             </li>
           </ul>
         </nav>
