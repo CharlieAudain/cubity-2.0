@@ -1,6 +1,20 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Stats extends Component {
+  static propTypes = {
+    best: PropTypes.string.isRequired,
+    tbest: PropTypes.string.isRequired,
+    worst: PropTypes.string.isRequired,
+    tworst: PropTypes.string.isRequired,
+    ao12: PropTypes.string.isRequired,
+    ao50: PropTypes.string.isRequired,
+    a0100: PropTypes.string.isRequired,
+    ao200: PropTypes.string.isRequired,
+    ao500: PropTypes.string.isRequired,
+    ao1000: PropTypes.string.isRequired,
+  };
+
   render() {
     const {
       best,
