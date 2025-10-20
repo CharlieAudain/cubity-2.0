@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
+
 class Scramble extends Component {
   static propTypes = {
     scramble: PropTypes.string.isRequired,
