@@ -8,6 +8,7 @@ class CurrentAvg extends Component {
     av3: PropTypes.string.isRequired,
     av4: PropTypes.string.isRequired,
     av5: PropTypes.string.isRequired,
+    ao5: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -16,12 +17,13 @@ class CurrentAvg extends Component {
     av3: "-",
     av4: "-",
     av5: "-",
+    ao5: "-",
   };
   render() {
-    const { av1, av2, av3, av4, av5 } = this.props;
+    const { av1, av2, av3, av4, av5, ao5 } = this.props;
     return (
       <div>
-        <p>Current Ao5: </p>
+        <p>Current Ao5: {ao5}</p>
         <ul>
           <li>{av1}</li>
           <li>{av2}</li>
