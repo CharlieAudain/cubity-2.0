@@ -1,6 +1,76 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+function scrambleGen(length) {
+  let gen = "";
+  let last;
+  let rng;
+  let rng2;
+  for (i = 0; i < length; i++) {
+    while (last == rng) {
+      // make sure you dont ge the same moves twice
+
+      rng = Math.floor(Math.random() * (7 - 1) + 1);
+    }
+
+    switch (rng) {
+      case 1:
+        rng2 = Math.floor(Math.random() * (3 - 1) + 1);
+        if (rng2 == 1) {
+          gen += "F";
+        } else {
+          gen += "F2";
+        }
+        break;
+      case 2:
+        rng2 = Math.floor(Math.random() * (3 - 1) + 1);
+        if (rng2 == 1) {
+          gen += "B";
+        } else {
+          gen += "B2";
+        }
+        break;
+      case 3:
+        rng2 = Math.floor(Math.random() * (3 - 1) + 1);
+        if (rng2 == 1) {
+          gen += "L";
+        } else {
+          gen += "L2";
+        }
+        break;
+      case 4:
+        rng2 = Math.floor(Math.random() * (3 - 1) + 1);
+        if (rng2 == 1) {
+          gen += "R";
+        } else {
+          gen += "R2";
+        }
+        break;
+      case 5:
+        rng2 = Math.floor(Math.random() * (3 - 1) + 1);
+        if (rng2 == 1) {
+          gen += "D";
+        } else {
+          gen += "D2";
+        }
+        break;
+      case 6:
+        rng2 = Math.floor(Math.random() * (3 - 1) + 1);
+        if (rng2 == 1) {
+          gen += "U";
+        } else {
+          gen += "U2";
+        }
+        break;
+    }
+    last = rng;
+    gen += " ";
+    console.log(gen);
+  }
+
+  return gen;
+}
+
 
 class Scramble extends Component {
   static propTypes = {
