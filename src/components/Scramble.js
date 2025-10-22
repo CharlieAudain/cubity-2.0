@@ -6,7 +6,7 @@ function scrambleGen(length) {
   let last;
   let rng;
   let rng2;
-  for (i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     while (last == rng) {
       // make sure you dont ge the same moves twice
 
@@ -70,7 +70,6 @@ function scrambleGen(length) {
 
   return gen;
 }
-
 
 class Scramble extends Component {
   static propTypes = {
