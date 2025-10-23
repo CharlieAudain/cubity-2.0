@@ -8,7 +8,7 @@ function scrambleGen(length) {
   let rng2;
   for (let i = 0; i < length; i++) {
     while (last == rng) {
-      // make sure you dont ge the same moves twice
+      // make sure you dont get the same moves twice
 
       rng = Math.floor(Math.random() * (7 - 1) + 1);
     }
@@ -65,7 +65,6 @@ function scrambleGen(length) {
     }
     last = rng;
     gen += " ";
-    console.log(gen);
   }
 
   return gen;
